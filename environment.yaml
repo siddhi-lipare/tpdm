@@ -4,6 +4,13 @@ channels:
   - nvidia
   - conda-forge
   - defaults
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+
+remote_connect_timeout_secs: 60
+remote_read_timeout_secs: 60
+ssl_verify: false 
+
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_kmp_llvm
@@ -27,7 +34,7 @@ dependencies:
   - contourpy=1.0.5=py310hdb19cb5_0
   - cryptography=41.0.2=py310h22a60cf_0
   - cuda-cudart=11.7.99=0
-  - cuda-cupti=11.7.101=0
+ 
   - cuda-libraries=11.7.1=0
   - cuda-nvrtc=11.7.99=0
   - cuda-nvtx=11.7.91=0
