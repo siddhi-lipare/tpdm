@@ -2,6 +2,12 @@
 
 This repository `TPDM` is the official implementation of the paper [Improving 3D Imaging with Pre-Trained Perpendicular 2D Diffusion Models (arxiv)](https://arxiv.org/abs/2303.08440).
 
+Note:
+I have added/updated the follwing files:
+- environment.yaml: the existing one wasn't working on my system, in case any of you are facing the same issue, you may try out this one. If you are still facing issues, feel free to write an issue.
+- stack.py: A simple code to stack all the photos to create a volume which I saved in an npy file.
+- visualise.py: used the stacked npy file to visualise the volume for a better understanding of how the denoising actually works.
+- 3d_volume_result.gif and progress_video.mp4: I have uploaded the outputss of the visualisation as well. 
 ![tpdm_title](figs/tpdm_title.png)
 
 
